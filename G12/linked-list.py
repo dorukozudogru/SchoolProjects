@@ -6,17 +6,17 @@ class Node:
 
 # Inserting a new node into an ordered linked list
 def insert_a_new_node_into_an_ordered_ll(head, data):
-    temp_node = head
+    current_node = head
     prev_node = None
     
     nn = Node()
     nn.data = data
 
-    while nn.data > temp_node.data:
-        prev_node = temp_node
-        temp_node = temp_node.pointer
+    while nn.data > current_node.data:
+        prev_node = current_node
+        current_node = current_node.pointer
 
-    nn.pointer = temp_node
+    nn.pointer = current_node
     prev_node.pointer = nn
 
 # Printing the linked list
