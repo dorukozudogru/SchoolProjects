@@ -1,0 +1,16 @@
+def InputPositiveNumber(num):
+    while num < 0:
+        num = int(input("Enter a positive number: "))
+    print("You entered this number: ", num)
+    print("You entered this number: " + str(num))
+    
+def InputPositiveNumber2(num2):
+    while num2 < 0:
+        num2 = int(input("Enter a positive number: "))
+    return num2
+
+number = int(input("Enter a positive number: "))    
+InputPositiveNumber(number)
+
+outer_number = InputPositiveNumber2(number)
+print(outer_number)
