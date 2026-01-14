@@ -15,3 +15,7 @@ while low <= high:
     else:
         high = mid - 1
 
+if found:
+    print("Item found")
+else:
+    print("Item not found")
