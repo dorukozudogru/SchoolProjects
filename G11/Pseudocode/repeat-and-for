@@ -1,0 +1,27 @@
+DECLARE N : INTEGER
+DECLARE Counter : INTEGER
+DECLARE Sum : INTEGER
+
+Counter <- 0
+Sum <- 0
+
+REPEAT
+    INPUT "Please enter a number: " N
+    Sum <- Sum + N
+    Counter <- Counter + 1
+UNTIL Counter == 10
+
+OUTPUT "The sum of all numbers is: " Sum
+
+
+FOR Counter <- 1 TO 10
+    INPUT "Please enter a number: " N
+    Sum <- Sum + N
+NEXT Counter
+
+
+FOR OuterCount <- 1 TO 10
+    FOR InnerCount <- 1 TO 10
+        OUTPUT InnerCount * OuterCount
+    NEXT InnerCount
+NEXT OuterCount
